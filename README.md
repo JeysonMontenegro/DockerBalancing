@@ -17,9 +17,11 @@ Nota. docker solo puede ser instalado en arquitecturas de 64 bits
 ## Paso 1
 Luego de instalar, solo deben ingresar estos comandos en la ruta del repositorio
 
-para compilar
+- para compilar
 
-- docker-compose build
++++
+docker-compose build
++++
 
 para levantar los servicios
 
