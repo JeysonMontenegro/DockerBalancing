@@ -1,26 +1,15 @@
-# Set the base image to Ubuntu
-FROM    ubuntu
-
-# File Author / Maintainer
-MAINTAINER Anand Mani Sankar
-
-# Install Node.js and other dependencies
-RUN apt-get update && \
-    apt-get -y install curl && \
-    curl -sL https://deb.nodesource.com/setup | sudo bash - && \
-    apt-get -y install python build-essential nodejs
-
-# Install nodemon
+#imge version
+FROM node:0.10.38
+# make dir src
+RUN mkdir /src
+# install nodemon
 RUN npm install -g nodemon
-
-# Provides cached layer for node_modules
-ADD package.json /tmp/package.json
-RUN cd /tmp && npm install
-RUN mkdir -p /src && cp -a /tmp/node_modules /src/
 
 # Define working directory
 WORKDIR /src
-ADD . /src
+ADD index.js /src/index.js
+ADD package.json /src/package.json
+RUN npm install
 
 # Expose port
 EXPOSE  8080
