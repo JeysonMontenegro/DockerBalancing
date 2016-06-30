@@ -10,11 +10,10 @@ For a detailed overview of Containers and Docker, refer to [this post from my bl
 [http://anandmanisankar.com/posts/container-docker-PaaS-microservices/](http://anandmanisankar.com/posts/container-docker-PaaS-microservices/)
 
 
-### Instucciones
+### Instrucciones
 Deben install docker y docker-compose
 Nota. docker solo puede ser instalado en arquitecturas de 64 bits
 
-## Paso 1
 Luego de instalar, solo deben ingresar estos comandos en la ruta del repositorio
 
 - para compilar
