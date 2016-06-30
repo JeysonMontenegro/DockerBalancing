@@ -24,3 +24,16 @@ $ docker-compose build
 ```console
 $ docker-compose up
 ```
+
+- para finalizar los servicios
+```console
+$ docker-compose kill
+```
+- para eliminar los containers
+```console
+$ docker-compose rm
+```
+- para observar los logs si ejecutan como demonio con -d luego de up
+```console
+$ docker-compose logs
+```
