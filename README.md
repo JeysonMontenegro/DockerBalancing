@@ -19,10 +19,10 @@ Luego de instalar, solo deben ingresar estos comandos en la ruta del repositorio
 
 - para compilar
 
-+++
-docker-compose build
-+++
 
+    +++
+    docker-compose build
+    +++
 para levantar los servicios
 
 - docker-compose up
